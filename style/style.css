@@ -58,9 +58,63 @@ header nav a:hover{
     padding: 20px;
 }
 
+.filme-principal .container{
+    width: 70%;
+}
+
 .filme-principal .titulo{
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .filme-principal .descricao{
     margin-bottom: 20px;
+}
+
+.button{
+    background-color:rgba(0,0,0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.button:hover{
+    background-color:var(--branco);
+    color: var(--preto);
+    transition: .5s ease all;
+}
+
+.button i {
+    margin-right: 7px;
+}
+
+.box-filme{
+    width: 440px;
+    display: block;
+}
+
+.carrosel-filmes{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+/* Resposive*/
+
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .descricao {
+        width: 80%;
+    }
 }
